@@ -62,7 +62,7 @@ private fun main(){
 	//Can check to see if a value is a particular Type
 	resultThree = when(a){
 		is Int -> "The value is of an Integer type"
-		is Long -> "The value is of a Boolean type"
+		//is Long -> "The value is of a Boolean type"
 		else -> "The value is not an Integer"
 	}
 	println(resultThree)
