@@ -37,7 +37,8 @@ private fun main(){
 		}
 		
 	}
-	//Labeled Continue
+	//Labeled Continue. Not sure if i'll really use labels, but we will see.
+	
 	println("Labeled Continue!")
 	first@ for(i in 1 .. 20){
 		
