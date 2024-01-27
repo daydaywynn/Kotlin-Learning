@@ -94,7 +94,7 @@ class myExampleClass (var myName : String = "Dayday"){}
 
 open class Bike{
 	constructor(wheels : Int){
-		
+		println("Called with $wheels")
 	}
 	constructor(motorOrNot : Boolean, wheels : Int){
 		if(wheels > 3 && motorOrNot){
