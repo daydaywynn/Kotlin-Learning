@@ -1,4 +1,5 @@
-package ClassesAndObjects
+package oop
+
 
 public fun main(){
 	var myLamp = Lamp()
@@ -22,7 +23,7 @@ public fun main(){
 */
 
 //Primary Constructor cannot contain any code!
-class Person(val firstName: String, var age: Int) {}
+class PersonOne(val firstName: String, var age: Int) {}
 
 //How to make a primary constructor with code!
 class PersonTwo(firstName_: String, age_: Int) {
@@ -31,7 +32,7 @@ class PersonTwo(firstName_: String, age_: Int) {
 
     // initializer block
     init {
-        firstName = firstName_.capitalize()
+        firstName = firstName_.replaceFirstChar{it.uppercase()}
         age = age_
 
         println("First Name = $firstName")
