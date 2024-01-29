@@ -19,6 +19,7 @@ fun main(){
 	var firstPerson : Person = Person("dayday", "wynn", 'M', 28)
 	firstPerson.getName()
 }
+
 open class Person(firstName_ : String, lastName_ : String, sex_ : Char, age_ : Int){
 	private var firstName : String = firstName_.replaceFirstChar{it.uppercase()} //visible inside of Inheritance.kt
 	private var lastName : String = lastName_.replaceFirstChar{it.uppercase()} //visible inside of Inheritance.kt
