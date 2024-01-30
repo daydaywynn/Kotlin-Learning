@@ -8,7 +8,7 @@ package oop
  The visibility modifiers are: public, private, internal, protected
  public - declarations are visible everywhere
  private - visible inside the file containing declaration
- internal - visible inside same module (set of ffiles compiled together)
+ internal - visible inside same module (set of files compiled together)
  protected - only used for subclasses, not for packages
  
  NOTE: IF YOU OVERRIDE A PROTECTED MEMBER BUT DON'T SPECIFY ITS VISIBILITY THEN IT WILL BE PROTECTED TOO
@@ -61,7 +61,7 @@ class Teacher(firstName_ : String, lastName_ : String, sex_ : Char, age_ : Int) 
 	var classSize : Int? = null
 	var manager : Teacher? = null
 	//Overriding property
-	override var salary : Int? = null
+	override var salary : Int? = null //protected, becuase the visibility modifier wasn't specified
 	
 	init{
 		super.setJobTitle("Teacher")
