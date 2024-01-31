@@ -53,7 +53,7 @@ class implementsMultiple : interfaceOne, interfaceTwo{
 		println("Tell me something better")
 	}
 	override fun fourthMethod(){
-		println("")
+		println("fourthMethod() is here")
 	}
 }
 
